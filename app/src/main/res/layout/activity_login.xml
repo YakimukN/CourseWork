@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eff0fc"
+    tools:context=".authentication.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/top_background" />
+
+                <ImageView
+                    android:id="@+id/imageView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:srcCompat="@drawable/women2" />
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="32dp"
+                    android:text="@string/loginToYourAccount"
+                    android:textColor="@color/white"
+                    android:textStyle="bold"
+                    android:textSize="33dp"
+                    app:layout_constraintBottom_toBottomOf="@id/imageView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textYourEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yourEmail"
+                android:textSize="18sp"
+                android:textColor="#2f3363"
+                android:textStyle="bold"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp" />
+
+            <EditText
+                android:id="@+id/emailEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:padding="8dp"
+                android:textColor="#a2a4b5"
+                android:textSize="16sp"
+                android:hint="@string/hintEnterEmail"
+                android:inputType="textPersonName"
+                android:background="@drawable/background_edittext" />
+
+            <TextView
+                android:id="@+id/textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/yourPassword"
+                android:textSize="18sp"
+                android:textColor="#2f3363"
+                android:textStyle="bold"
+                android:layout_marginStart="32dp"
+                android:layout_marginTop="32dp" />
+
+            <EditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:ems="10"
+                android:padding="8dp"
+                android:textColor="#a2a4b5"
+                android:textSize="16sp"
+                android:hint="@string/hintEnterPassword"
+                android:inputType="textPassword"
+                android:background="@drawable/background_edittext" />
+
+<!--            <TextView-->
+<!--                android:id="@+id/timeOrderTV"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="@string/forgotPassword"-->
+<!--                android:textAlignment="textEnd"-->
+<!--                android:layout_marginEnd="32dp"-->
+<!--                android:layout_marginTop="8dp" />-->
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/loginBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login"
+                android:background="@drawable/background_btn_2"
+                style="@android:style/Widget.Button"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="32dp"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:drawableEnd="@drawable/circle"
+                android:paddingStart="64dp"
+                android:padding="4dp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/noAccountTv"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="@string/doNotHaveAccountRegister"
+                android:background="@drawable/background_btn_1"
+                style="@android:style/Widget.Button"
+                android:layout_marginStart="32dp"
+                android:layout_marginEnd="32dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="32dp"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!--    <androidx.constraintlayout.widget.ConstraintLayout-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <!--        <androidx.coordinatorlayout.widget.CoordinatorLayout-->
+    <!--            android:orientation="vertical"-->
+    <!--            android:layout_width="match_parent"-->
+    <!--            android:layout_height="match_parent">-->
+
+    <!--            <FrameLayout-->
+    <!--                android:id="@+id/fragmentContainer"-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="match_parent"/>-->
+
+    <!--&lt;!&ndash;            <com.google.android.material.floatingactionbutton.FloatingActionButton&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:id="@+id/addButton"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:backgroundTint="@color/white"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:src="@drawable/ic_add"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:backgroundTint="@color/black"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_gravity="bottom|end"&ndash;&gt;-->
+    <!--&lt;!&ndash;                android:layout_margin="10dp"&ndash;&gt;-->
+    <!--&lt;!&ndash;                app:maxImageSize="50dp" />&ndash;&gt;-->
+
+    <!--        </androidx.coordinatorlayout.widget.CoordinatorLayout>-->
+
+    <!--    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <!--    <com.google.android.material.navigation.NavigationView-->
+    <!--        android:id="@+id/navView"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="match_parent"-->
+    <!--        android:layout_gravity="start"-->
+    <!--        android:fitsSystemWindows="true"-->
+    <!--        app:headerLayout="@layout/nav_header"-->
+    <!--        app:menu="@menu/drawer_view" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

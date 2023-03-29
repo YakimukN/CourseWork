@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_tasks"
+            android:icon="@drawable/ic_tasks"
+            android:title="@string/tasks" />
+        <item
+            android:id="@+id/nav_workers"
+            android:icon="@drawable/ic_people"
+            android:title="@string/workers" />
+        <item
+            android:id="@+id/nav_equipments"
+            android:icon="@drawable/ic_equipment"
+            android:title="@string/equipment" />
+        <item
+            android:id="@+id/nav_machines"
+            android:icon="@drawable/ic_machine"
+            android:title="@string/machines" />
+
+        <item android:title="@string/additionally">
+            <menu>
+                <group android:checkableBehavior="single">
+                    <item android:id="@+id/nav_help"
+                        android:icon="@drawable/ic_help"
+                        android:title="@string/help"/>
+                    <item android:id="@+id/nav_logout"
+                        android:icon="@drawable/ic_logout"
+                        android:title="@string/logoutFromAccount"/>
+                </group>
+            </menu>
+        </item>
+    </group>
+
+</menu>
